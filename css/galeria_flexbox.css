@@ -1,0 +1,39 @@
+html {
+  background: skyblue;
+}
+
+.gallery {
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding: 1em;
+}
+.item {
+  flex: 1 0 15em;
+  margin: 1em;
+  min-width: 8em;
+  min-height: 8em;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 480px){
+img{
+		width: 40%;
+	}
+.item{
+	margin: 3px;
+	min-width: 1em;
+	min-height: 0em;
+		
+}	
+}
+
+@media (max-width: 320px){
+	.item{
+		margin-top: 15px;
+	}
+	
+}
